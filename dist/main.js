@@ -120,8 +120,8 @@ function createWindow() {
   });
 }
 
-electron__WEBPACK_IMPORTED_MODULE_0__["app"].on("ready", createWindow);
-console.log(1231312);
+electron__WEBPACK_IMPORTED_MODULE_0__["app"].on("ready", createWindow); //使用child_process fork 子进程进行调试, 用process.send 和 nodejs 进程进行通信，达到重载页面的目的
+// don't delete
 
 if (isDevelopment) {
   process.on("message", function (msg) {
